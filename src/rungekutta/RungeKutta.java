@@ -34,12 +34,12 @@ public class RungeKutta {
         f_expr = MathExpression.parseString(ft);
     }
 	
-	public void setPoint(double t, double y, double z)
-	{
-		this.z = z;
-		this.y = y;
-		this.t = t;
-	}
+    public void setPoint(double t, double y, double z)
+    {
+        this.z = z;
+        this.y = y;
+        this.t = t;
+    }
     
     public Point getNextPoint()
     {
