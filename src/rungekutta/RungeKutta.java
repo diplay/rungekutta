@@ -98,10 +98,10 @@ public class RungeKutta {
         z = z - h*(l1 + 2*l2 + 2*l3 + l4)/6;
         
         if(Double.isInfinite(y) || Double.isInfinite(z))
-            throw new IllegalArgumentException("В точке " + (t - h) + 
+            throw new IllegalArgumentException("В точке " + (t + h) + 
                     " функция или производная принимает значение бесконечность.");
         if(Double.isNaN(y) || Double.isNaN(z))
-            throw new IllegalArgumentException("В точке " + (t - h) + 
+            throw new IllegalArgumentException("В точке " + (t + h) + 
                     " значение функции или производной не определено.");
 		
         return new Point(z, t, y);
